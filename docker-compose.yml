@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    container_name: api # nome o container
+    ports:
+      - "8000:8000" # mapeia a 8000 do host para a posta 8000 do container
+
+    volumes:
+      - .:/app
